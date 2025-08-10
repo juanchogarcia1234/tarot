@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "729160442289",
+    "project_id": "deyaspace",
+    "storage_bucket": "deyaspace.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729160442289:android:ce998e454c701d11671d90",
+        "android_client_info": {
+          "package_name": "com.example.tarot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLZy9a-_H_jiWykj5fno0bbTfEY7nyltI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
