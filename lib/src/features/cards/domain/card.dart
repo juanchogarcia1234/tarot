@@ -1,21 +1,21 @@
-class Card {
-  final String id;
-  final String title;
-  final String description;
-  final CardType type;
-  final CardTopic topic;
-  final String imagePath;
-  final int? order;
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-  Card({
-    required this.id,
-    required this.title,
-    required this.description,
-    required this.type,
-    required this.topic,
-    required this.imagePath,
-    this.order,
-  });
+part 'card.freezed.dart';
+part 'card.g.dart';
+
+@freezed
+abstract class Card with _$Card {
+  const factory Card({
+    required String id,
+    required String title,
+    required String description,
+    required CardType type,
+    required CardTopic topic,
+    required String imagePath,
+    required int? order,
+  }) = _Card;
+
+  factory Card.fromJson(Map<String, Object?> json) => _$CardFromJson(json);
 }
 
 enum CardType { riderWaite, deya }
